@@ -20,7 +20,13 @@ function cx(classNames) {
       return classNames[className] ? className : '';
     }).join(' ');
   } else {
-    return Array.prototype.join.call(arguments, ' ');
+    return Array.prototype.filter.call(arguments, function(d){
+      if (typeof d === 'boolean' || d === null || d === '' || d === undefined || (typeof d === 'number' && isNaN(d))){
+        return null;
+      }
+
+      return String(d);
+    }).join(' ');
   }
 }
 

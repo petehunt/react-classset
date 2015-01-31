@@ -4,7 +4,7 @@
   "description": "classSet() from React.addons",
   "main": "classSet.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/*.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
     "cx"
   ],
   "author": "Pete Hunt",
-  "license": "Apache 2"
+  "license": "Apache 2",
+  "devDependencies": {
+    "tape": "~2.14.0"
+  }
 }
