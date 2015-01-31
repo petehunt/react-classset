@@ -1,6 +1,6 @@
 {
   "name": "react-classset",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility for easily manipulating the DOM class string",
   "main": "classSet.js",
   "scripts": {
@@ -12,9 +12,11 @@
   },
   "keywords": [
     "react",
+    "addon",
     "classSet",
     "cx",
-    "class"
+    "class",
+    "style"
   ],
   "author": "Pete Hunt",
   "license": "Apache 2",
