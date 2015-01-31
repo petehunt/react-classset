@@ -16,9 +16,16 @@
 
 function cx(classNames) {
   if (typeof classNames == 'object') {
-    return Object.keys(classNames).filter(function(className) {
-      return classNames[className];
-    }).join(' ');
+    var names = '';
+
+    for (var name in classNames) {
+      if (!classNames.hasOwnProperty(name) || !classNames[name]) {
+        continue;
+      }
+      names += name + ' ';
+    }
+
+    return names.trim();
   } else {
     return Array.prototype.join.call(arguments, ' ');
   }
