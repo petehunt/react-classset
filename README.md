@@ -29,7 +29,7 @@ When using `classSet()`, pass an object with keys of the CSS class names you mig
 Alternatively, you can also use it this way:
 
 ```javascript
-cx('a', 0, null, undefined, 'b'); // 'a 0   b', discards null values
+cx('a', 0, null, undefined, 'b'); // 'a 0 b', discards null values
 ```
 
 No more hacky string concatenations!

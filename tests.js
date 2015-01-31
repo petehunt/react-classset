@@ -14,7 +14,7 @@ describe('cx', function() {
   });
 
   it('joins arrays of class names, excluding null values', function() {
-    assert.equal(cx('a', 0, null, undefined, 'b'), 'a 0   b');
+    assert.equal(cx('a', 0, null, undefined, 'b'), 'a 0 b');
   });
 
   it('returns an empty string for an empty configuration', function() {
