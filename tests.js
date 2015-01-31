@@ -10,7 +10,7 @@ describe('cx', function() {
       d: null,
       e: undefined,
       f: 1,
-    }), 'a     f');
+    }), 'a f');
   });
 
   it('joins arrays of class names, excluding null values', function() {
