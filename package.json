@@ -1,19 +1,20 @@
 {
   "name": "react-classset",
   "version": "0.0.1",
-  "description": "classSet() from React.addons",
+  "description": "Utility for easily manipulating the DOM class string",
   "main": "classSet.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests.js"
   },
   "repository": {
     "type": "git",
-    "url": "."
+    "url": "https://github.com/petehunt/react-classset"
   },
   "keywords": [
     "react",
     "classSet",
-    "cx"
+    "cx",
+    "class"
   ],
   "author": "Pete Hunt",
   "license": "Apache 2",
